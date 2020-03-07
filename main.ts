@@ -1,7 +1,56 @@
-basic.showLeds(`
-    . . . . .
-    . # . # .
-    . . . . .
-    # . . . #
-    . # # # .
-    `);
+// Filip Wydra
+input.onButtonPressed(Button.A, function () {
+    AlphaBot2.MotorRun(Motors.M1, 100)
+    AlphaBot2.MotorRun(Motors.M2, 100)
+    basic.pause(2000)
+    AlphaBot2.MotorRun(Motors.M1, -25)
+    AlphaBot2.MotorRun(Motors.M2, -5)
+    basic.pause(1000)
+    AlphaBot2.MotorRun(Motors.M1, 100)
+    AlphaBot2.MotorRun(Motors.M2, 100)
+    basic.pause(2000)
+    AlphaBot2.MotorRun(Motors.M1, -25)
+    AlphaBot2.MotorRun(Motors.M2, 25)
+    basic.pause(1000)
+    AlphaBot2.MotorRun(Motors.M2, 100)
+    AlphaBot2.MotorRun(Motors.M1, 100)
+    basic.pause(2000)
+    AlphaBot2.MotorRun(Motors.M1, 25)
+    AlphaBot2.MotorRun(Motors.M2, -25)
+    basic.pause(1000)
+    AlphaBot2.MotorRun(Motors.M1, 75)
+    AlphaBot2.MotorRun(Motors.M2, 75)
+    basic.pause(2000)
+    AlphaBot2.MotorRun(Motors.M2, -50)
+    basic.pause(1000)
+    AlphaBot2.RunDelay(Dir.forward, 70, 2)
+})
+input.onButtonPressed(Button.B, function () {
+    AlphaBot2.MotorRun(Motors.M1, -100)
+    AlphaBot2.MotorRun(Motors.M2, -100)
+    basic.pause(1000)
+    AlphaBot2.MotorRun(Motors.M1, 100)
+    AlphaBot2.MotorRun(Motors.M2, -100)
+    basic.pause(1000)
+    AlphaBot2.MotorRun(Motors.M1, 100)
+    AlphaBot2.MotorRun(Motors.M2, 100)
+    basic.pause(2000)
+    AlphaBot2.MotorRun(Motors.M1, 40)
+    AlphaBot2.MotorRun(Motors.M2, 25)
+    basic.pause(2000)
+    AlphaBot2.Run(Dir.backward, 75)
+    basic.pause(2000)
+    AlphaBot2.MotorRun(Motors.M1, 40)
+    AlphaBot2.MotorRun(Motors.M2, 25)
+    basic.pause(2000)
+    AlphaBot2.MotorRun(Motors.M1, 70)
+    AlphaBot2.MotorRun(Motors.M2, 70)
+    basic.pause(1000)
+    AlphaBot2.MotorRun(Motors.M1, 100)
+    AlphaBot2.MotorRun(Motors.M2, -100)
+})
+basic.showIcon(IconNames.Rabbit)
+basic.forever(function () {
+
+})
+ 
